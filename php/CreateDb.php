@@ -28,6 +28,7 @@ class CreateDb
 
       // create connection
         $this->con = mysqli_connect($servername, $username, $password);
+        
 
         // Check connection
         if (!$this->con){
@@ -36,7 +37,6 @@ class CreateDb
 
         // query
         $sql = "CREATE DATABASE IF NOT EXISTS $dbname";
-
         // execute query
         if(mysqli_query($this->con, $sql)){
 
@@ -58,7 +58,16 @@ class CreateDb
             return false;
         }
     }
-
+    public function getData(){
+        $sql = "SELECT * FROM $this->tablename";
+        $result = mysqli_query($this->con, $sql);
+        if(mysqli_num_rows($result) > 0){
+            return $result;
+        }
+    }
+    
+   
+    
 
 }
 
