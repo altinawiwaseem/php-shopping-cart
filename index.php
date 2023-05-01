@@ -57,6 +57,7 @@ print_r($_SESSION["cart"]);
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php require_once("php/header.php")?>
 <div class="container">
     <div class="row text-center py-5" >
        <?php
