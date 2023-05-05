@@ -10,7 +10,7 @@
 
 ### about the project
 
-PHP shopping cart using relational database mysql
+This PHP project is designed to showcase my skills in creating a shopping cart system with MySQL as the database. It includes a simple user interface where users can browse through products that are dynamically fetched from the database. Users can add items to their cart and view the quantity and value of the items in the cart. It demonstrates my proficiency in PHP and MySQL, as well as my ability to create a functional and user-friendly interface for an e-commerce platform
 
 #### Developed with
 
